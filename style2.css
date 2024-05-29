@@ -1,0 +1,41 @@
+/* Add styles for menu icon */
+.menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+/* Add styles for menu icon when hovered */
+.menu-icon:hover {
+    color: #fff;
+}
+
+/* Add styles for menu icon when clicked */
+.menu-open .menu-icon {
+    color: #fff;
+}
+
+/* Hide menu icon on larger screens */
+@media screen and (min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
+}
+
+/* Add styles for menu items */
+.menu-open nav ul {
+    display: block;
+}
+
+.menu-open nav ul li {
+    display: block;
+    margin: 10px 0;
+}
+
+/* Hide menu items on smaller screens */
+@media screen and (max-width: 767px) {
+    header nav ul {
+        display: none;
+    }
+}
